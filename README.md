@@ -16,8 +16,8 @@
 
 | No. | Nama | NIM |
 |-----|------|-----|
-| 1 | Indah Putri Lestari | 2409116004 |
-| 2 | Larry Polin Anugrah | 2409116026 |
+| 1 | INDAH PUTRI LESTARI | 2409116004 |
+| 2 | LARRY POLIN ANUGRAH | 2409116026 |
 | 3 | ZELSYA RIZQITA RAHMADHINI | 2409116022 |
 
 ---
