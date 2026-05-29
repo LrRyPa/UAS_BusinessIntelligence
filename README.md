@@ -1,4 +1,4 @@
-# ![ToySight](public/assets/img/favicon.svg) ToySight BI
+# ToySight BI
 ### *Suite Analitik Cerdas untuk Bisnis Retail Mainan*
 
 ---
@@ -207,12 +207,5 @@ Stage 4 — Load      : Menyimpan tabel DW ke SQLite (prefix dw__)
 
 Hasil pipeline ETL menghasilkan file `mexican_toys_dws.db` yang digunakan langsung oleh sistem web ToySight BI.
 
----
 
-## Informasi Proyek
 
-- **Nama Sistem** : ToySight BI
-- **Versi** : 1.0.0
-- **Tujuan** : Laporan Penelitian — Implementasi Sistem Business Intelligence
-- **Dataset** : Mexican Toys Sales (Kaggle)
-- **Tahun** : 2026
