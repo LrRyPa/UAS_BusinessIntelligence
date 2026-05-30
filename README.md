@@ -3,14 +3,15 @@
 
 ---
 
-## Identitas Kelompok
+## Informasi Kelompok
 
-| | |
+| Keterangan | Isi |
 |---|---|
 | **Mata Kuliah** | Business Intelligence |
 | **Kelas** | A — Sistem Informasi |
 | **Kelompok** | 12 |
 | **Tugas** | Ujian Akhir Semester (UAS) |
+| **Judul Proyek** | Implementasi Sistem Business Intelligence Berbasis Website Menggunakan Data Warehouse Dan Dashboard Analytics Untuk Mendukung Decision Support System Pada Retail Mainan Di Mexico |
 
 ### Anggota Kelompok
 
