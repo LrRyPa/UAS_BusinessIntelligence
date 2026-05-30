@@ -8,8 +8,8 @@
 | Keterangan | Isi |
 |---|---|
 | **Kelompok** | 12 |
-| **Mata Kuliah** | Business Intelligence |
 | **Kelas** | A - Sistem Informasi |
+| **Mata Kuliah** | Business Intelligence |
 | **Tugas** | Ujian Akhir Semester (UAS) |
 | **Judul Proyek** | Implementasi Sistem Business Intelligence Berbasis Website Menggunakan Data Warehouse Dan Dashboard Analytics Untuk Mendukung Decision Support System Pada Retail Mainan Di Mexico |
 
