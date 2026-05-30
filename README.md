@@ -16,9 +16,9 @@
 
 | No. | Nama | NIM |
 |-----|------|-----|
-| 1 | Nama Anggota 1 | 123456001 |
-| 2 | Nama Anggota 2 | 123456002 |
-| 3 | Nama Anggota 3 | 123456003 |
+| 1 | Indah Putri Lestari | 2409116004 |
+| 2 | Larry Polin Anugrah | 2409116026 |
+| 3 | Zelsya Rizqita Rahmadhini | 2409116022 |
 
 ---
 
