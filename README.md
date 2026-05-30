@@ -191,7 +191,7 @@ toysight/
 
 ## Dataset
 
-Dataset yang digunakan adalah **Mexican Toys Sales** yang diperoleh dari platform **Kaggle**.
+Dataset yang digunakan adalah **Mexican Toys Sales** yang diperoleh dari platform **Kaggle**. Berikut tautannya: https://www.kaggle.com/datasets/amulyas/mexican-toys-sales
 
 | File | Baris | Deskripsi |
 |------|-------|-----------|
