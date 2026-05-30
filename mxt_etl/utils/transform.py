@@ -92,11 +92,11 @@ class DataWarehouseTransformer:
 
         for name, df in result.items():
             logger.info(
-                "  ✔ Built '%-20s' : %7d baris × %d kolom",
+                "  Built '%-20s' : %7d baris × %d kolom",
                 name, len(df), len(df.columns),
             )
 
-        logger.info("============ TRANSFORM selesai ============")
+        logger.info("============= TRANSFORM selesai =============")
         return result
 
     def _build_dim_product(self) -> pd.DataFrame:

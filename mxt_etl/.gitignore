@@ -7,4 +7,4 @@ __pycache__/
 *.pyc
 .coverage
 
-etl_pipeline.log
+.extracted_manifest.json

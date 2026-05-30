@@ -1,0 +1,49 @@
+2026-05-30 13:21:03  INFO      etl.main — Mexican Toys Sales ETL Pipeline — starting
+2026-05-30 13:21:04  INFO      utils.db — Berhasil terhubung ke: C:\Users\Larry\Downloads\terbaru\UAS BI\mxt_etl\datawarehouse\mexican_toys_dws.db
+2026-05-30 13:21:04  INFO      etl.main — 
+2026-05-30 13:21:04  INFO      etl.main — ┌─ STAGE 1 — EXTRACT ──────────────────────────────────────
+2026-05-30 13:21:04  INFO      utils.extract — Ditemukan 5 file di 'datasets'
+2026-05-30 13:21:04  INFO      utils.extract —   Extracted 'calendar            ' :     638 baris × 1 kolom
+2026-05-30 13:21:04  INFO      utils.extract —   Extracted 'inventory           ' :    1593 baris × 3 kolom
+2026-05-30 13:21:04  INFO      utils.extract —   Extracted 'products            ' :      35 baris × 5 kolom
+2026-05-30 13:21:04  INFO      utils.extract —   Extracted 'sales               ' :  829262 baris × 5 kolom
+2026-05-30 13:21:04  INFO      utils.extract —   Extracted 'stores              ' :      50 baris × 5 kolom
+2026-05-30 13:21:04  INFO      etl.main — File baru terdeteksi: ['calendar.csv', 'inventory.csv', 'products.csv', 'sales.csv', 'stores.csv']
+2026-05-30 13:21:04  INFO      etl.main — 
+2026-05-30 13:21:04  INFO      etl.main — ┌─ STAGE 2 — STAGING ──────────────────────────────────────
+2026-05-30 13:21:04  INFO      utils.staging — ============== STAGING: memuat 5 tabel ===============
+2026-05-30 13:21:04  INFO      utils.staging —  Staged 'staging__calendar': 638 baris
+2026-05-30 13:21:04  INFO      utils.staging —  Staged 'staging__inventory': 1593 baris
+2026-05-30 13:21:04  INFO      utils.staging —  Staged 'staging__products': 35 baris
+2026-05-30 13:21:11  INFO      utils.staging —  Staged 'staging__sales': 829262 baris
+2026-05-30 13:21:11  INFO      utils.staging —  Staged 'staging__stores': 50 baris
+2026-05-30 13:21:11  INFO      utils.staging — ======== STAGING selesai: 5 berhasil, 0 gagal ========
+2026-05-30 13:21:11  INFO      etl.main — 
+2026-05-30 13:21:11  INFO      etl.main — ┌─ STAGE 3 — TRANSFORM ────────────────────────────────────
+2026-05-30 13:21:14  INFO      utils.transform — ====== TRANSFORM: Membuat Galaxy Schema ======
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'dim_product         ' :      35 baris × 8 kolom
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'dim_store           ' :      50 baris × 7 kolom
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'dim_category        ' :       5 baris × 3 kolom
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'dim_date            ' :     638 baris × 11 kolom
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'fact_sales          ' :  829262 baris × 12 kolom
+2026-05-30 13:21:18  INFO      utils.transform —   Built 'fact_inventory      ' :    1593 baris × 4 kolom
+2026-05-30 13:21:18  INFO      utils.transform — ============= TRANSFORM selesai =============
+2026-05-30 13:21:18  INFO      etl.main — 
+2026-05-30 13:21:18  INFO      etl.main — ┌─ STAGE 4 — LOAD ─────────────────────────────────────────
+2026-05-30 13:21:18  INFO      utils.load — === DW LOAD [strategy=replace, dry_run=False]: 6 tabel ===
+2026-05-30 13:21:18  INFO      utils.load —   Loaded 'dw__dim_product': 35 baris
+2026-05-30 13:21:18  INFO      utils.load —   Loaded 'dw__dim_store': 50 baris
+2026-05-30 13:21:18  INFO      utils.load —   Loaded 'dw__dim_category': 5 baris
+2026-05-30 13:21:18  INFO      utils.load —   Loaded 'dw__dim_date': 638 baris
+2026-05-30 13:21:26  INFO      utils.load —   Loaded 'dw__fact_sales': 829262 baris
+2026-05-30 13:21:26  INFO      utils.load —   Loaded 'dw__fact_inventory': 1593 baris
+2026-05-30 13:21:26  INFO      utils.load — === DW LOAD selesai: Loaded: 6 | Skipped: 0 | Failed: 0 ===
+2026-05-30 13:21:26  INFO      etl.main — Pipeline selesai
+2026-05-30 13:21:26  INFO      etl.main — ── DW Table Summary ────────────────────────────────────────
+2026-05-30 13:21:26  INFO      etl.main —   dw__dim_category                                5 baris
+2026-05-30 13:21:26  INFO      etl.main —   dw__dim_date                                  638 baris
+2026-05-30 13:21:26  INFO      etl.main —   dw__dim_product                                35 baris
+2026-05-30 13:21:26  INFO      etl.main —   dw__dim_store                                  50 baris
+2026-05-30 13:21:26  INFO      etl.main —   dw__fact_inventory                           1593 baris
+2026-05-30 13:21:26  INFO      etl.main —   dw__fact_sales                             829262 baris
+2026-05-30 13:21:26  INFO      etl.main — ────────────────────────────────────────────────────────────

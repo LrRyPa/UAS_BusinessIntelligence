@@ -82,7 +82,7 @@ class StagingLoader:
         self.chunk_size = chunk_size
 
     def load_all(self, datasets: Dict[str, pd.DataFrame]) -> None:
-        logger.info("=== STAGING: memuat %d tabel ===", len(datasets))
+        logger.info("============== STAGING: memuat %d tabel ===============", len(datasets))
         success, failed = 0, 0
         for name, df in datasets.items():
             try:
@@ -91,7 +91,7 @@ class StagingLoader:
             except Exception:
                 failed += 1
         logger.info(
-            "=== STAGING selesai: %d berhasil, %d gagal ===", success, failed
+            "======== STAGING selesai: %d berhasil, %d gagal ========", success, failed
         )
 
     def load_table(self, table_name: str, df: pd.DataFrame) -> None:
@@ -116,10 +116,10 @@ class StagingLoader:
                 chunksize=self.chunk_size,
             )
             logger.info(
-                "  ✔ Staged '%s': %d baris", sqlite_table, len(clean_df)
+                " Staged '%s': %d baris", sqlite_table, len(clean_df)
             )
         except Exception as exc:
-            logger.error("  ✘ Gagal staging '%s': %s", sqlite_table, exc)
+            logger.error(" Gagal staging '%s': %s", sqlite_table, exc)
             raise
 
     @staticmethod

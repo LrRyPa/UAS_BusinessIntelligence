@@ -72,7 +72,7 @@ class DataExtractor:
             if df is not None:
                 datasets[table_name] = df
                 logger.info(
-                    "  ✔ Extracted '%-20s' : %7d baris × %d kolom",
+                    "  Extracted '%-20s' : %7d baris × %d kolom",
                     table_name, len(df), len(df.columns),
                 )
                 if path.name not in previous:

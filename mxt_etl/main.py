@@ -151,9 +151,8 @@ def _parse_args() -> argparse.Namespace:
 
 def _banner(msg: str) -> None:
     border = "═" * (len(msg) + 4)
-    logger.info("╔%s╗", border)
-    logger.info("║  %s  ║", msg)
-    logger.info("╚%s╝", border)
+    logger.info(msg)
+
 
 
 def _section(msg: str) -> None:
