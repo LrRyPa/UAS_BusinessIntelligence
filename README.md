@@ -16,13 +16,21 @@
 
 | No. | Nama | NIM |
 |-----|------|-----|
-| 1 | INDAH PUTRI LESTARI | 2409116004 |
-| 2 | LARRY POLIN ANUGRAH | 2409116026 |
-| 3 | ZELSYA RIZQITA RAHMADHINI | 2409116022 |
+| 1 | Nama Anggota 1 | 123456001 |
+| 2 | Nama Anggota 2 | 123456002 |
+| 3 | Nama Anggota 3 | 123456003 |
 
 ---
 
 > Sistem Business Intelligence berbasis web yang dirancang untuk membantu proses monitoring penjualan, inventaris, dan performa toko pada perusahaan retail mainan secara lebih cepat, terstruktur, dan berbasis data.
+
+---
+
+## Eksplorasi Data (Google Colab)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PM_NidQLsljvF0gYbyX6EyDL5-lOcwTJ?usp=sharing)
+
+> **Catatan:** Link Google Colab di atas hanya digunakan untuk keperluan **eksplorasi dan pemahaman awal terhadap isi dataset** Mexican Toys Sales (preview data, pengecekan tipe data, dan analisis struktur file CSV). Proses ETL sesungguhnya dibangun secara modular menggunakan Python di Visual Studio Code dan **tidak dijalankan melalui Colab**.
 
 ---
 
@@ -206,6 +214,3 @@ Stage 4 — Load      : Menyimpan tabel DW ke SQLite (prefix dw__)
 ```
 
 Hasil pipeline ETL menghasilkan file `mexican_toys_dws.db` yang digunakan langsung oleh sistem web ToySight BI.
-
-
-
