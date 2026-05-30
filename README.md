@@ -191,7 +191,7 @@ toysight/
 
 ## Dataset
 
-Dataset yang digunakan adalah **Mexican Toys Sales** yang diperoleh dari platform **Kaggle**. Dataset ini terdiri dari 5 file CSV yang saling terhubung:
+Dataset yang digunakan adalah **Mexican Toys Sales** yang diperoleh dari platform **Kaggle**.
 
 | File | Baris | Deskripsi |
 |------|-------|-----------|
