@@ -46,28 +46,28 @@ Sistem ini menerapkan konsep **Decision Support System (DSS)** melalui dashboard
 ## Fitur Utama
 
 ### Dashboard Analytics
-- **Dashboard Utama** — KPI ringkasan bisnis: total pendapatan, pesanan, unit terjual, laba kotor, total produk, jumlah toko, stok inventaris, dan rata-rata margin
-- **Analitik Penjualan** — Tren penjualan harian, performa toko (Top 15), komposisi kategori, pola penjualan per hari, serta 10 produk teratas dan terbawah
-- **Analitik Produk** — Performa per kategori, distribusi pendapatan per tier harga, dan tabel detail margin produk
-- **Analitik Inventaris** — Distribusi kondisi stok, stok per kategori, stok per toko (Top 10), dan peringatan stok rendah/habis
-- **Performa Toko** — Pendapatan per kota, distribusi tipe lokasi, dan peringkat seluruh toko
+- **Dashboard Utama** - KPI ringkasan bisnis: total pendapatan, pesanan, unit terjual, laba kotor, total produk, jumlah toko, stok inventaris, dan rata-rata margin
+- **Analitik Penjualan** - Tren penjualan harian, performa toko (Top 15), komposisi kategori, pola penjualan per hari, serta 10 produk teratas dan terbawah
+- **Analitik Produk** - Performa per kategori, distribusi pendapatan per tier harga, dan tabel detail margin produk
+- **Analitik Inventaris** - Distribusi kondisi stok, stok per kategori, stok per toko (Top 10), dan peringatan stok rendah/habis
+- **Performa Toko** - Pendapatan per kota, distribusi tipe lokasi, dan peringkat seluruh toko
 
 ### Sistem Login dan Hak Akses (RBAC)
 Sistem menerapkan Role-Based Access Control dengan 4 role pengguna:
 
 | Role | Hak Akses |
 |------|-----------|
-| **Admin** | Akses penuh — semua dashboard, semua CRUD, manajemen pengguna |
+| **Admin** | Akses penuh - semua dashboard, semua CRUD, manajemen pengguna |
 | **Manager** | Semua dashboard + laporan (hanya baca, tanpa CRUD) |
 | **Sales Staff** | Dashboard utama + analitik penjualan + CRUD penjualan + lihat produk |
 | **Warehouse Staff** | Dashboard utama + analitik inventaris + CRUD inventaris |
 
 ### Pengelolaan Data (CRUD)
-- **Produk** — Tambah, edit, hapus produk dengan klasifikasi tier harga otomatis (Budget / Mid-Range / Premium)
-- **Toko** — Kelola data cabang retail di 29 kota Meksiko dengan 4 tipe lokasi
-- **Penjualan** — Catat transaksi dengan kalkulasi otomatis revenue, COGS, gross profit, dan margin
-- **Inventaris** — Kelola stok per toko dengan peringatan stok rendah
-- **Pengguna** — Admin dapat mengelola akun dan role pengguna sistem
+- **Produk** - Tambah, edit, hapus produk dengan klasifikasi tier harga otomatis (Budget / Mid-Range / Premium)
+- **Toko** - Kelola data cabang retail di 29 kota Meksiko dengan 4 tipe lokasi
+- **Penjualan** - Catat transaksi dengan kalkulasi otomatis revenue, COGS, gross profit, dan margin
+- **Inventaris** - Kelola stok per toko dengan peringatan stok rendah
+- **Pengguna** - Admin dapat mengelola akun dan role pengguna sistem
 
 ### Laporan dan Export
 - 4 jenis laporan: Ringkasan Penjualan, Performa Produk, Peringkat Toko, Penjualan Berdasarkan Kategori
